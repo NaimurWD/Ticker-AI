@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlTag">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Ticker AI</title>
+  </head>
+  <body class="bg-white dark:bg-gray-900">
+    <!-- navigation start  -->
+    <header class="select-none">
+      <nav
+        class="container flex mx-auto my-7 items-center justify-between px-4"
+      >
+        <!-- logo start  -->
+        <div class="flex space-x-4">
+          <img src="assets/tickerAI-logo 1.png" alt="Logo" />
+          <div class="hidden md:flex md:flex-col my-auto dark:text-white">
+            <span class="text-sm">A Mark Cuban Company </span>
+            <span class="text-sm"
+              >AI-based Financial Market News Aggregator</span
+            >
+          </div>
+        </div>
+        <!-- logo end  -->
+        <!-- button Group start -->
+        <div class="flex space-x-4">
+          <a href="news.html">
+            <button
+              class="px-7 py-4 bg-[#5677AC] font-semibold text-white text-base rounded-md hover:bg-[#42669e] hover:scale-105 hover:shadow-lg duration-300 transition-all dark:bg-[#263d62] hidden sm:inline-block"
+            >
+              Personalize News
+            </button>
+          </a>
+
+          <button
+            class="w-14 bg-[rgba(86,119,172,0.15)] rounded-full font-extrabold text-[#5677AC] text-lg hover:bg-[rgba(86,119,172,0.25)] duration-300 hidden md:inline-block"
+          >
+            IK
+          </button>
+          <button id="switch" class="hover:scale-105 duration-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-10 dark:stroke-white transition-all"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- button group end  -->
+      </nav>
+    </header>
+    <!-- navigation end -->
+    <!-- hero section start -->
+    <section
+      class="bg-[url('https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] pt-28 pb-20 bg-cover bg-center mb-8"
+    >
+      <div>
+        <img class="mx-auto mb-10" src="assets/hero-img.png" alt="" />
+        <div class="container mx-auto px-4">
+          <div
+            class="flex items-center justify-start space-x-4 bg-white p-4 w-full md:max-w-[550px] mx-auto rounded-md hover:ring"
+          >
+            <img src="assets/search.svg" alt="" />
+            <input
+              type="text"
+              name="search"
+              placeholder="Search any market topic..."
+              class="outline-none w-full"
+            />
+          </div>
+        </div>
+        <p
+          class="mt-5 text-gray-300 text-xs flex items-center justify-center shadow-lg"
+        >
+          There are 6 articles available for your preferences
+        </p>
+      </div>
+    </section>
+    <!-- hero section End -->
+    <!--All News and feature section start  -->
+    <section>
+      <div class="container mx-auto grid grid-cols-12 px-4 gap-9">
+        <!-- all News part start -->
+        <div class="md:col-span-8 lg:col-span-9 col-span-12">
+          <!-- heading part start -->
+          <div
+            class="flex justify-between items-center pb-3 border-b-2 border-[#333] dark:border-gray-800 mb-9"
+          >
+            <h2 class="font-semibold text-2xl uppercase dark:text-white">
+              All news
+            </h2>
+            <div class="flex items-center space-x-2">
+              <p class="dark:text-white">Filter by :</p>
+              <select
+                class="w-20 focus:ring rounded outline-none font-bold text-gray-900 cursor-pointer"
+              >
+                <option value="volvo">Stocks</option>
+                <option value="saab">Dow jones</option>
+              </select>
+            </div>
+          </div>
+          <!-- heading part end -->
+          <!-- Individual Stocks part start  -->
+          <div class="mb-14">
+            <h3 class="font-semibold text-2xl mb-4 dark:text-white">
+              Individual Stocks
+            </h3>
+            <!-- stocks 01 start -->
+            <div class="article">
+              <img
+                class="w-full h-44 object-cover md:h-fit md:size-[150px]"
+                src="assets/stocks-1.png"
+                alt=""
+              />
+              <div>
+                <div class="icons flex items-center gap-[6px] mb-5">
+                  <span class="stock-tag">Dow jones</span>
+                  <span class="stock-tag">Nasdaq</span>
+                  <span class="stock-tag">S & P 500</span>
+                </div>
+                <h4
+                  class="text-lg font-semibold text-[#333] mb-3 dark:text-white"
+                >
+                  Nzd/usd forex technical analysis - traders will be monitoring
+                  fed for future rate hike clues
+                </h4>
+                <p class="text-base text-[#616161] mb-5 dark:text-gray-400">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet...
+                </p>
+                <div class="flex gap-3 items-center">
+                  <p class="text-sm text-[#616161] dark:text-gray-400">
+                    06 September 2022
+                  </p>
+
+                  <p class="name dark:dark:text-gray-400">
+                    By
+                    <span
+                      ><a class="font-semibold text-[#5677AC] uppercase" href=""
+                        >Shouvik Nath</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- stocks 01 end -->
+            <!-- stocks 02 start -->
+            <div class="article">
+              <img
+                class="w-full h-44 object-cover md:h-fit md:size-[150px]"
+                src="assets/stocks-2.png"
+                alt=""
+              />
+              <div>
+                <div class="icons flex items-center gap-[6px] mb-5">
+                  <span class="stock-tag">Dow jones</span>
+                  <span class="stock-tag">Nasdaq</span>
+                  <span class="stock-tag">S & P 500</span>
+                </div>
+                <h4
+                  class="text-lg font-semibold text-[#333] mb-3 dark:text-white"
+                >
+                  Nzd/usd forex technical analysis - traders will be monitoring
+                  fed for future rate hike clues
+                </h4>
+                <p class="text-base text-[#616161] mb-5 dark:text-gray-400">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet...
+                </p>
+                <div class="flex gap-3 items-center">
+                  <p class="text-sm text-[#616161] dark:text-gray-400">
+                    06 September 2022
+                  </p>
+
+                  <p class="name dark:dark:text-gray-400">
+                    By
+                    <span
+                      ><a class="font-semibold text-[#5677AC] uppercase" href=""
+                        >Shouvik Nath</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- stocks 02 end -->
+            <!-- stocks 03 start -->
+            <div class="article">
+              <img
+                class="w-full h-44 object-cover md:h-fit md:size-[150px]"
+                src="assets/stocks-3.png"
+                alt=""
+              />
+              <div>
+                <div class="icons flex items-center gap-[6px] mb-5">
+                  <span class="stock-tag">Dow jones</span>
+                  <span class="stock-tag">Nasdaq</span>
+                  <span class="stock-tag">S & P 500</span>
+                </div>
+                <h4
+                  class="text-lg font-semibold text-[#333] mb-3 dark:text-white"
+                >
+                  Nzd/usd forex technical analysis - traders will be monitoring
+                  fed for future rate hike clues
+                </h4>
+                <p class="text-base text-[#616161] mb-5 dark:text-gray-400">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet...
+                </p>
+                <div class="flex gap-3 items-center">
+                  <p class="text-sm text-[#616161] dark:text-gray-400">
+                    06 September 2022
+                  </p>
+
+                  <p class="name dark:dark:text-gray-400">
+                    By
+                    <span
+                      ><a class="font-semibold text-[#5677AC] uppercase" href=""
+                        >Shouvik Nath</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- stocks 03 end -->
+          </div>
+          <!-- Individual Stocks part end  -->
+          <!-- Individual Stocks part start  -->
+          <div class="mb-14">
+            <h3 class="font-semibold text-2xl mb-4 dark:text-white">
+              Stock Sectors
+            </h3>
+            <!-- stocks 01 start -->
+            <div class="article">
+              <img
+                class="w-full h-44 object-cover md:h-fit md:size-[150px]"
+                src="assets/stocks-4.png"
+                alt=""
+              />
+              <div>
+                <div class="icons flex items-center gap-[6px] mb-5">
+                  <span class="stock-tag">Dow jones</span>
+                  <span class="stock-tag">Nasdaq</span>
+                  <span class="stock-tag">S & P 500</span>
+                </div>
+                <h4
+                  class="text-lg font-semibold text-[#333] mb-3 dark:text-white"
+                >
+                  Nzd/usd forex technical analysis - traders will be monitoring
+                  fed for future rate hike clues
+                </h4>
+                <p class="text-base text-[#616161] mb-5 dark:text-gray-400">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet...
+                </p>
+                <div class="flex gap-3 items-center">
+                  <p class="text-sm text-[#616161] dark:text-gray-400">
+                    06 September 2022
+                  </p>
+
+                  <p class="name dark:dark:text-gray-400">
+                    By
+                    <span
+                      ><a class="font-semibold text-[#5677AC] uppercase" href=""
+                        >Shouvik Nath</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- stocks 01 end -->
+            <!-- stocks 02 start -->
+            <div class="article">
+              <img
+                class="w-full h-44 object-cover md:h-fit md:size-[150px]"
+                src="assets/stocks-5.png"
+                alt=""
+              />
+              <div>
+                <div class="icons flex items-center gap-[6px] mb-5">
+                  <span class="stock-tag">Dow jones</span>
+                  <span class="stock-tag">Nasdaq</span>
+                  <span class="stock-tag">S & P 500</span>
+                </div>
+                <h4
+                  class="text-lg font-semibold text-[#333] mb-3 dark:text-white"
+                >
+                  Nzd/usd forex technical analysis - traders will be monitoring
+                  fed for future rate hike clues
+                </h4>
+                <p class="text-base text-[#616161] mb-5 dark:text-gray-400">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet...
+                </p>
+                <div class="flex gap-3 items-center">
+                  <p class="text-sm text-[#616161] dark:text-gray-400">
+                    06 September 2022
+                  </p>
+
+                  <p class="name dark:dark:text-gray-400">
+                    By
+                    <span
+                      ><a class="font-semibold text-[#5677AC] uppercase" href=""
+                        >Shouvik Nath</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- stocks 02 end -->
+          </div>
+          <!-- Individual Stocks part end  -->
+          <!-- Individual Stocks part start  -->
+          <div class="mb-14">
+            <h3 class="font-semibold text-2xl mb-4 dark:text-white">
+              Stock Sectors
+            </h3>
+            <!-- stocks 01 start -->
+            <div class="article">
+              <img
+                class="w-full h-44 object-cover md:h-fit md:size-[150px]"
+                src="assets/stocks-6.png"
+                alt=""
+              />
+              <div>
+                <div class="icons flex items-center gap-[6px] mb-5">
+                  <span class="stock-tag">Dow jones</span>
+                  <span class="stock-tag">Nasdaq</span>
+                  <span class="stock-tag">S & P 500</span>
+                </div>
+                <h4
+                  class="text-lg font-semibold text-[#333] mb-3 dark:text-white"
+                >
+                  Nzd/usd forex technical analysis - traders will be monitoring
+                  fed for future rate hike clues
+                </h4>
+                <p class="text-base text-[#616161] mb-5 dark:text-gray-400">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet...
+                </p>
+                <div class="flex gap-3 items-center">
+                  <p class="text-sm text-[#616161] dark:text-gray-400">
+                    06 September 2022
+                  </p>
+
+                  <p class="name dark:dark:text-gray-400">
+                    By
+                    <span
+                      ><a class="font-semibold text-[#5677AC] uppercase" href=""
+                        >Shouvik Nath</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- stocks 01 end -->
+          </div>
+          <!-- Individual Stocks part end  -->
+        </div>
+        <!-- all News part end -->
+        <!-- featured part start -->
+        <div class="md:col-span-4 lg:col-span-3 col-span-12">
+          <!-- heading part start -->
+          <div class="pb-3 border-b-2 border-[#333] dark:border-gray-800 mb-9">
+            <h2 class="font-semibold text-2xl uppercase dark:text-white">
+              Featured
+            </h2>
+          </div>
+          <!-- heading part end -->
+          <h3 class="font-semibold text-2xl mb-4 dark:text-white">
+            Daily Rundowns
+          </h3>
+          <!-- All tag part start  -->
+          <div class="p-5 border border-[#DDE2E5] mb-5 dark:border-gray-800">
+            <!-- first type tag group start -->
+            <div class="mb-5">
+              <h4 class="text-base font-medium mb-2.5 dark:text-white">
+                Earnings:
+              </h4>
+              <div class="flex flex-wrap gap-y-3 items-center gap-1.5">
+                <span class="featured-tag">Csan</span>
+                <span class="featured-tag">Alya</span>
+                <span class="featured-tag">Gato</span>
+                <span class="featured-tag">Css</span>
+                <span class="featured-tag">VZLA</span>
+                <span class="featured-tag">MFH</span>
+              </div>
+            </div>
+            <!-- first type tag group start -->
+            <!-- second type tag group start -->
+            <div class="mb-5">
+              <h4 class="text-base font-medium mb-2.5 dark:text-white">
+                Movers:
+              </h4>
+              <div class="flex flex-wrap gap-y-3 items-center gap-1.5">
+                <span class="featured-tag">rev</span>
+                <span class="featured-tag">petv</span>
+                <span class="featured-tag">rytm</span>
+                <span class="featured-tag">srrk</span>
+                <span class="featured-tag">vera</span>
+                <span class="featured-tag">kzia</span>
+                <span class="featured-tag">sym</span>
+              </div>
+            </div>
+            <!-- second type tag group start -->
+            <!-- third type tag group start -->
+            <div class="mb-5">
+              <h4 class="text-base font-medium mb-2.5 dark:text-white">
+                Technicals:
+              </h4>
+              <div class="flex flex-wrap gap-y-3 items-center gap-1.5">
+                <span class="featured-tag">bearish</span>
+                <span class="featured-tag">regn</span>
+                <span class="featured-tag">tsla</span>
+                <span class="featured-tag">mcd</span>
+                <span class="featured-tag">bullish</span>
+                <span class="featured-tag">uso</span>
+                <span class="featured-tag">sedg</span>
+                <span class="featured-tag">enph</span>
+                <span class="featured-tag">shop</span>
+              </div>
+            </div>
+            <!-- third type tag group start -->
+          </div>
+          <!-- tag part end -->
+          <!-- tranding section start -->
+          <div>
+            <!-- tranding 1 start  -->
+            <div class="mb-5 cursor-pointer">
+              <img class="w-full mb-2.5" src="assets/tranding-1.png" alt="" />
+              <h5 class="text-center font-medium w-3/4 mx-auto dark:text-white">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </h5>
+            </div>
+            <!-- tranding 1 end  -->
+            <!-- tranding 2  start  -->
+            <div class="mb-5 cursor-pointer">
+              <img class="w-full mb-2.5" src="assets/tranding-2.png" alt="" />
+
+              <h5 class="text-center font-medium w-3/4 mx-auto dark:text-white">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </h5>
+            </div>
+            <!-- tranding 2 end  -->
+            <!-- tranding 3  start  -->
+            <div class="mb-5 cursor-pointer">
+              <img class="w-full mb-2.5" src="assets/tranding-3.png" alt="" />
+              <h5 class="text-center font-medium w-3/4 mx-auto dark:text-white">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </h5>
+            </div>
+            <!-- tranding 3 end  -->
+          </div>
+          <!-- tranding section end-->
+        </div>
+        <!-- featured part end -->
+      </div>
+    </section>
+    <!--All News and feature section end  -->
+    <!-- footer section start  -->
+    <footer
+      class="text-center py-4 border-t border-gray-200 dark:border-gray-800 text-sm text-[#8a8a8a] select-none"
+    >
+      All right reserved to TickerAI - 2024
+    </footer>
+    <!-- footer section END -->
+    <script>
+      const htmlTag = document.getElementById("htmlTag");
+      document.getElementById("switch").addEventListener("click", function () {
+        htmlTag.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
